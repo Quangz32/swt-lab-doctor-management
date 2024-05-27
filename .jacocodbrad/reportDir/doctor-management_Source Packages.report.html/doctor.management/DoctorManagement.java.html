@@ -15,20 +15,20 @@ public class DoctorManagement {
 
     public void deleteDoctorById(String id) {
 <span class="fc" id="L17">        Doctor doctor = getDoctorById(id);</span>
-<span class="pc bpc" id="L18" title="1 of 2 branches missed.">        if (doctor != null) {</span>
+<span class="fc bfc" id="L18" title="All 2 branches covered.">        if (doctor != null) {</span>
 <span class="fc" id="L19">            doctors.remove(doctor);</span>
         } else {
-<span class="nc" id="L21">            System.out.println(&quot;Doctor not found.&quot;);</span>
+<span class="fc" id="L21">            System.out.println(&quot;Doctor not found.&quot;);</span>
         }
 <span class="fc" id="L23">    }</span>
 
     public void updateDoctor(Doctor updatedDoctor) {
 <span class="fc" id="L26">        Doctor doctor = getDoctorById(updatedDoctor.getId());</span>
-<span class="pc bpc" id="L27" title="1 of 2 branches missed.">        if (doctor != null) {</span>
+<span class="fc bfc" id="L27" title="All 2 branches covered.">        if (doctor != null) {</span>
 <span class="fc" id="L28">            int index = doctors.indexOf(doctor);</span>
 <span class="fc" id="L29">            doctors.set(index, updatedDoctor);</span>
 <span class="fc" id="L30">        } else {</span>
-<span class="nc" id="L31">            System.out.println(&quot;Doctor not found.&quot;);</span>
+<span class="fc" id="L31">            System.out.println(&quot;Doctor not found.&quot;);</span>
         }
 <span class="fc" id="L33">    }</span>
     
